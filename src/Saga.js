@@ -7,6 +7,10 @@ Saga = (function () {
 
   return {
     frame: 0,
+    mouse: {
+      x: null,
+      y: null,
+    },
     getInstance: function () {
       if (!instance) {
         instance = createInstance();

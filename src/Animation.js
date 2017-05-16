@@ -16,12 +16,8 @@ Animation.prototype.update = function () {
     this.frame_current = this.frames[this.frame];
   }
   this.frame++;
-  this.person.position.x = this.person.position.x + this.frame_current.width * this.velocidad;
   if(this.frames.length == this.frame) {
     this.frame = 0;
-  }
-  if(this.person.position .x > Saga.canvas().width) {
-    this.person.position.x = 0 - this.person.position.width
   }
 };
 
