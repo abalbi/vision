@@ -1,0 +1,30 @@
+{
+  "name": "vision",
+  "version": "1.0.0",
+  "description": "",
+  "main": "karma.config.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abalbi/vision.git"
+  },
+  "author": "abalbi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abalbi/vision/issues"
+  },
+  "homepage": "https://github.com/abalbi/vision#readme",
+  "devDependencies": {
+    "jasmine-core": "^2.6.2",
+    "karma": "^1.7.0",
+    "karma-coverage": "^1.1.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "phantomjs": "^2.1.7"
+  }
+}

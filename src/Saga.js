@@ -1,7 +1,7 @@
 Saga = (function () {
   var instance;
   function createInstance() {
-    var object = new Object("I am the instance");
+    var object = new Object();
     return object;
   }
 
@@ -31,6 +31,17 @@ Saga = (function () {
         this._context = this.canvas().getContext('2d');
       }
       return this._context;
+    },
+    init: function (argument) {
+      document.addEventListener('mousemove',function(evt){ 
+        Saga.mouse.x = evt.pageX-Saga.canvas().offsetLeft;
+        Saga.mouse.y = evt.pageY-Saga.canvas().offsetTop;
+      } ,false);
+      document.addEventListener('mousedown',function(evt){ 
+        Saga.mouse.lastPress = evt.which; 
+      },false);
+      eval(argument + ".init();");
+      return true;
     },
     params: function (obj, params) {
       for (var key in params) {

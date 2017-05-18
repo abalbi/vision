@@ -33,8 +33,8 @@ Person.prototype.reset = function () {
   this.position = {
     x: 0,
     y: 50,  
-    width: 60,
-    height: 140
+    width: 30,
+    height: 70
   };
   this.animation_current = this.animations[Math.floor(Math.random()*this.animations.length)];
   return this;

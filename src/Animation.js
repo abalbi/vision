@@ -1,11 +1,8 @@
 function Animation (params) {
+  this.frames = [];
+  this.frame = 0;
+  this.velocidad = 0;
   Saga.params(this, params);
-  if(!this.velocidad) {
-    this.velocidad = 0;
-  }
-  if(!this.frame) {
-    this.frame = 0;
-  }
   this.img = new Image();
   this.img.src = this.img_src;
 }
